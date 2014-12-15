@@ -1,0 +1,14 @@
+{
+  "name": "flapper-news",
+  "description": "A tutorial project for AngularJS",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "html5-boilerplate": "~4.3.0",
+    "bootstrap": "~3.3.1",
+    "angular-ui-router": "~0.2.13"
+  }
+}
