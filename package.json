@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node --debug=5005 ./bin/www",
+    "postinstall": "bower install"
   },
   "dependencies": {
     "body-parser": "~1.8.1",
@@ -14,8 +15,5 @@
     "mongoose": "^3.8.20",
     "morgan": "~1.3.0",
     "serve-favicon": "~2.1.3"
-  },
-  "scripts": {
-    "postinstall": "bower install"
   }
 }
