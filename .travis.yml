@@ -13,7 +13,7 @@ before_script:
   - sleep 1 # give server time to start
 
 after_script:
-  - codeclimate < test/coverage/**/lcov.info
+  - codeclimate < coverage/**/lcov.info
 
 script:
   - karma start karma.conf.js --no-auto-watch --single-run --reporters=dots --browsers=Firefox
