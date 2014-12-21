@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/franckuser16/AngularTuto.svg?branch=develop)](https://travis-ci.org/franckuser16/AngularTuto) [![Code Climate](https://codeclimate.com/github/franckuser16/AngularTuto/badges/gpa.svg)](https://codeclimate.com/github/franckuser16/AngularTuto) [![Test Coverage](https://codeclimate.com/github/franckuser16/AngularTuto/badges/coverage.svg)](https://codeclimate.com/github/franckuser16/AngularTuto)
+[![Build Status](https://travis-ci.org/franckuser16/AngularTuto.svg?branch=develop)](https://travis-ci.org/franckuser16/AngularTuto) [![Dependency Status](https://gemnasium.com/franckuser16/AngularTuto.svg)](https://gemnasium.com/franckuser16/AngularTuto) [![Code Climate](https://codeclimate.com/github/franckuser16/AngularTuto/badges/gpa.svg)](https://codeclimate.com/github/franckuser16/AngularTuto) [![Test Coverage](https://codeclimate.com/github/franckuser16/AngularTuto/badges/coverage.svg)](https://codeclimate.com/github/franckuser16/AngularTuto)
 
 # Tuto Angular
 
