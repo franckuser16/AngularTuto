@@ -25,7 +25,7 @@ module.exports = function(config){
     ],
 
     reporters: ['progress', 'coverage'],
-    preprocessors: { '*.js': ['coverage'] },
+    preprocessors: { 'public/javascripts/*.js': ['coverage'] },
 
     coverageReporter: {
       // specify a common output directory
