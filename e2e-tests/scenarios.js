@@ -4,7 +4,7 @@
 
 describe('flapper-news app', function() {
 
-  browser.get('index.html');
+  browser.get('/');
 
   it('should automatically redirect to /home when location hash/fragment is empty', function() {
     expect(browser.getLocationAbsUrl()).toMatch("/home");
