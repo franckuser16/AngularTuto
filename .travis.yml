@@ -7,10 +7,18 @@ node_js:
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - npm install -g codeclimate-test-reporter
   - npm start > /dev/null &
   - npm run update-webdriver
   - sleep 1 # give server time to start
 
+after_script:
+  - codeclimate < test/coverage/**/lcov.info
+
 script:
   - karma start karma.conf.js --no-auto-watch --single-run --reporters=dots --browsers=Firefox
   - protractor e2e-tests/protractor.conf.js --browsers=Firefox
+
+env:
+  global:
+    secure: VlTxkRJ0KHqSmQaZLkjjHS8lOxUqV+NVEDpAFeUqbmVkVqEoHO02+wxsFv5y+PKuO8/It9DatPZp/kOeoXL8F/215Gd0bDXE/DL+AoEMESGyNgOxnS0RP1klhvjUf7fw2IvMiispLQPhieH7pZOdCmTjbn+4mUr+dV/AmlgF6/E=
