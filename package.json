@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "postinstall": "bower install",
+    "prestart": "npm install",
     "start": "node ./bin/www",
     "debug": "node --debug=5005 ./bin/www",
     "pretest": "npm install",
