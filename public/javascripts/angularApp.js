@@ -53,7 +53,7 @@ angular.module('flapperNews', [
 
     o.get = function (id) {
       return $http.get('/posts/' + id).then(function (res) {
-        return res.data();
+        return res.data;
       })
     };
 
