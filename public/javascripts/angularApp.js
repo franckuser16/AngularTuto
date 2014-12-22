@@ -3,7 +3,7 @@
 angular.module('flapperNews', [
   'ui.router'
 ])
-  .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+  .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
         url: '/home',
@@ -27,6 +27,7 @@ angular.module('flapperNews', [
       });
 
     $urlRouterProvider.otherwise('/home');
+    $locationProvider.html5Mode(true);
   }])
   .factory('posts', ['$http', function ($http) {
     var o = {
