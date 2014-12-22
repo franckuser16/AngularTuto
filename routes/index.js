@@ -53,6 +53,13 @@ router
 
       res.json(comment);
     });
+  })
+  .put('/posts/:post/comments/:comment/upvote', function (req, res, next) {
+    req.comment.upvote(function (err, comment) {
+      if (err) { return next(err); }
+
+      res.json(comment);
+    });
   });
 
 router.param('post', function(req, res, next, id){
