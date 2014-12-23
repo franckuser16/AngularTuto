@@ -7,7 +7,7 @@ module.exports = function(config){
       'public/bower_components/angular/angular.js',
       'public/bower_components/angular-ui-router/release/angular-ui-router.min.js',
       'public/bower_components/angular-mocks/angular-mocks.js',
-      'public/javascripts/*.js'
+      'js/*.js'
     ],
 
     autoWatch : true,
@@ -25,7 +25,7 @@ module.exports = function(config){
     ],
 
     reporters: ['progress', 'coverage'],
-    preprocessors: { 'public/javascripts/*.js': ['coverage'] },
+    preprocessors: { 'js/*.js': ['coverage'] },
 
     coverageReporter: {
       // specify a common output directory
